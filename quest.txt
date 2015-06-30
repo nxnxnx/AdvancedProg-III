@@ -1,0 +1,155 @@
+        Inheritance dan Polimorphism Assignment
+
+        Bobot nilai 35% dari total nilai tugas akhir. Satu kelompok bisa sampai 3 orang dan anggota kelompok bisa sama atau berbeda dengan tugas-tugas sebelumnya. Waktu dikumpulkan 6 Juli 23.55 dan tidak boleh terlambat. Demo program per kelompok adalah tanggal 7, 8, dan 9 Juli. Untuk demo perlu bikin janji dulu dengan saya, jadwalnya akan saya umumkan.
+
+        Input ada 3 file yaitu circle, square dan rectangle. Isi square adalah sisi dalam cm. Isi circle adalah jari-jari dalam cm. Isi rectangle adalah lebar dan panjang dalam cm. Tiga kelas ini adalah keturunan dari kelas Shape.
+
+        Baca ketiga file tersebut dan ukur lebar dan kelilingnya di konstruktor tiap objek.
+
+        Untuk semua menu, perhatikan error checking agar menu yang dimasukkan valid (angka yang diinginkan dan hanya angka).
+
+        Menu Utama:
+            Tampilkan Shape
+            Tambah Shape
+            Delete Shape
+            Exit
+
+        Menu Tampilkan Shape
+            Tampilkan Semua Shape
+            Tampilkan Circle
+            Tampilkan Square
+            Tampilkan Rectangle
+            Kembali ke Main Menu
+
+        Di menu “Tampilkan Semua Shape”
+            Urutkan berdasarkan lebar
+            Urutkan berdasarkan keliling
+            Kembali ke Menu Tampilkan Shape
+
+        Untuk menu “Urutkan berdasarkan lebar”, tampilkan semua shape (Circle, Rectangle, dan Square) diurutkan berdasarkan lebar mereka berserta data individual (jari-jari untuk circle, panjang dan lebar untuk rectangle, dan sisi untuk square)
+
+        Untuk menu “Urutkan berdasarkan keliling”, tampilkan semua shape (Circle, Rectangle, dan Square) diurutkan berdasarkan keliling mereka (jari-jari untuk circle, panjang dan lebar untuk rectangle, dan sisi untuk square).
+
+         Di menu “Tampilkan Circle”
+            Urutkan berdasarkan luas
+            Urutkan berdasarkan keliling
+            Kembali ke Menu Tampilkan Shape
+
+        Untuk menu “Urutkan berdasarkan lebar”, tampilkan semua Circle diurutkan berdasarkan lebar dan data individual mereka.
+
+        Untuk menu “Urutkan berdasarkan keliling”, tampilkan semua Circle diurutkan berdasarkan keliling dan data individual mereka.
+
+        Di menu “Tampilkan Square”
+            Urutkan berdasarkan luas
+            Urutkan berdasarkan keliling
+            Kembali ke Menu Tampilkan Shape
+
+        Untuk menu “Urutkan berdasarkan lebar”, tampilkan semua Square diurutkan berdasarkan lebar dan data individual mereka.
+
+        Untuk menu “Urutkan berdasarkan keliling”, tampilkan semua Square diurutkan berdasarkan keliling dan data individual mereka
+
+        Di menu “Tampilkan Rectangle”
+            Urutkan berdasarkan luas
+            Urutkan berdasarkan keliling
+            Kembali ke Menu Tampilkan Shape
+
+        Untuk menu “Urutkan berdasarkan lebar”, tampilkan semua Rectangle diurutkan berdasarkan lebar dan data individual mereka.
+
+        Untuk menu “Urutkan berdasarkan keliling”, tampilkan semua Rectangle diurutkan berdasarkan keliling dan data individual mereka
+
+        Di menu Tambah Shape:
+            Tambah Circle
+            Tambah Square
+            Tambah Rectangle
+            Kembali ke menu utama
+
+         
+
+        Kita bisa mempunyai circle dengan jari-jari yang sama, square dengan sisi yang sama, dan rectangle dengan panjang dan lebar yang sama. Jadi bisa ada duplikat.
+
+        Untuk menu Tambah Circle.
+
+        Masukkan jari-jari:
+
+        Perhatikan bahwa jari-jari yang dimasukkan adalah angka yang valid.
+
+        Untuk menu Tambah Square.
+
+        Masukkan sisi:
+
+        Perhatikan bahwa sisi yang dimasukkan adalah angka yang valid.
+
+        Untuk menu Tambah Rectangle.
+
+        Masukkan panjang:
+
+        Masukkan lebar:
+
+        Perhatikan bahwa panjang dan lebar yang dimasukkan adalah angka yang valid dan panjang >= lebar.
+
+         
+
+        Di menu Delete Shape:
+            Delete Circle
+            Delete Square
+            Delete Rectangle
+            Kembali ke menu utama
+
+        Untuk menu Delete Circle.
+
+        Masukkan jari-jari yang akan dihapus:
+
+        Perhatikan bahwa jari-jari yang dimasukkan adalah angka yang valid.
+
+        Kalau tidak ada Circle dengan jari-jari tersebut laporkan “Tidak ada Circle dengan jari-jari x.”
+
+        Kalau ada, laporkan “Circle dengan jari-jari x telah dihapus.” X adalah angka jari-jari yang dimasukkan. Kalau ada circle dengan jari-jari yang sama, semua circle dengan jari-jari tersebut terhapus.
+
+        Untuk menu Delete Square.
+
+        Masukkan sisi yang akan dihapus:
+
+        Perhatikan bahwa sisi yang dimasukkan adalah angka yang valid.
+
+        Kalau tidak ada Square dengan sisi tersebut laporkan “Tidak ada Square dengan sisi x.”
+
+        Kalau ada, laporkan “Square dengan sisi x telah dihapus.” X adalah angka sisi yang dimasukkan.
+
+        Kalau ada square dengan sisi yang sama, semua square dengan sisi tersebut terhapus.
+
+         
+
+        Untuk menu Delete Rectangle.
+
+        Masukkan panjang:
+
+        Masukkan lebar:
+
+        Perhatikan bahwa panjang dan lebar yang dimasukkan adalah angka yang valid dan panjang >= lebar.
+
+        Kalau tidak ada Rectangle dengan panjang dan lebar tersebut laporkan “Tidak ada Rectangle dengan panjang p dan lebar l.” P dan L adalah panjang dan lebar yang dimasukkan.
+
+        Kalau ada, laporkan “Rectangle dengan panjang p dan lebar l telah dihapus.”
+
+        Kalau ada rectangle dengan panjang dan lebar yang sama, semua rectangle dengan panjang dan lebar tersebut terhapus.
+
+        Waktu program exit, semua data circle, square dan rectangle ditulis di file masing-masing dan tidak perlu diurutkan.
+
+         
+
+        Untuk sorting, bisa implementasikan struktur data sendiri atau menggunakan library yang sudah ada. Pergunakan operator overloading dan/atau template untuk membanding shape mana yang lebih besar.
+
+        Kumpulkan file-file shape.h, shape.cpp, rectangle.h, rectangle.cpp, circle.h, circle.cpp, square.h, square.cpp, main.cpp, design.doc, output circle.txt, rectangle.txt, dan square.txt. Design.doc berisi penjelasan algoritma dan struktur data yang kalian pilih untuk tugas ini beserta feature-feature advanced class (inheritance, polymorphism, template, operator overloading, dan lain-lain) yang kalian gunakan dan cara mengcompile program.  Semua file ini bisa di-zip.
+
+        Bobot penilaian:
+
+        -Program berjalan sesuai soal (40%)
+
+        -Error Checking (10%)
+
+        -Penggunaan concept Object Oriented (inheritance, polymorphism, template, operator overloading, dan lain-lain) secara benar (35%)
+
+        -Effisiensi program (10%)
+
+        -Design.doc yang jelas (10%)
+
